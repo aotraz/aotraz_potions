@@ -1,0 +1,5 @@
+local CHEMICAL = Wizardry.Objects.NewChemical("aotraz.meth")
+CHEMICAL:SetName("Meth")
+CHEMICAL:SetDescription("For uh... scientific purposes... That makes it legal, right?")
+CHEMICAL:SetPrice(1000)
+CHEMICAL:Define()

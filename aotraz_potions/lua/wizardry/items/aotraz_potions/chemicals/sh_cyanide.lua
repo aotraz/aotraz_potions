@@ -1,0 +1,5 @@
+local CHEMICAL = Wizardry.Objects.NewChemical("aotraz.cyanide")
+CHEMICAL:SetName("Cyanide")
+CHEMICAL:SetDescription("Enjoying the taste of death since 1782!")
+CHEMICAL:SetPrice(4000)
+CHEMICAL:Define()
