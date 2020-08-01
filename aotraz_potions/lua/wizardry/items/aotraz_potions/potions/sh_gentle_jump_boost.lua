@@ -19,7 +19,7 @@ POTION:Define()
 function POTION:DrinkSV(ply)
   ply:SetNWInt("aotraz_originalJumpPower" , ply:GetJumpPower())
   ply:SetJumpPower(ply:GetNWInt("aotraz_originalJumpPower") * aotraz_potions.Config.JumpPower)
-  hook.Add("EntityTakeDamage", "aotrazpotions_falldamage_" + ply:SteamID64(), function(target, dmginfo)
+  hook.Add("EntityTakeDamage", "aotrazpotions_falldamage_" .. ply:SteamID64(), function(target, dmginfo)
   	if (target == ply && dmginfo:IsFallDamage()) then
       dmginfo:ScaleDamage(0)
   	end
@@ -28,5 +28,5 @@ end
 
 function POTION:DesistSV(ply)
   ply:SetJumpPower(ply:GetNWInt("aotraz_originalJumpPower"))
-  hook.Remove("EntityTakeDamage", "aotrazpotions_falldamage_" + ply:SteamID64())
+  hook.Remove("EntityTakeDamage", "aotrazpotions_falldamage_" .. ply:SteamID64())
 end
