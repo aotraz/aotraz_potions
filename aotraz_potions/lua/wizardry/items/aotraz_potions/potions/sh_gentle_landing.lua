@@ -16,7 +16,7 @@ POTION.recipe = {
 POTION:Define()
 
 function POTION:DrinkSV(ply)
-  hook.Add("EntityTakeDamage", "aotrazpotions_falldamage_" + ply:SteamID64(), function(target, dmginfo)
+  hook.Add("EntityTakeDamage", "aotrazpotions_falldamage_" .. ply:SteamID64(), function(target, dmginfo)
   	if (target == ply && dmginfo:IsFallDamage()) then
       dmginfo:ScaleDamage(0)
   	end
