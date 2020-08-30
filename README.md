@@ -1,9 +1,10 @@
 # Aotraz's Potions
 Made for Livaco's Wizardry addon: https://www.gmodstore.com/market/view/wizardry-potion-creation-system
 
-*Might* add some more stuff later. If there's any issues just put it into the tracker.
-
 Config file is located at aotraz_potions\lua\wizardry\items\aotraz_potions\potions\sh_config.lua
+
+
+*Might* add some more stuff later. If there's any issues just put it into the tracker. If anyone has any ideas I could try, you can also put those into the issue tracker as well.
 
 My first GLua project with help from the Facepunch wiki and Livaco himself :)
 
