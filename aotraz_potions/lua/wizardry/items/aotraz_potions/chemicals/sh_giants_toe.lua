@@ -1,5 +1,5 @@
 local CHEMICAL = Wizardry.Objects.NewChemical("aotraz.giants_toe")
 CHEMICAL:SetName("Giant's Toe")
 CHEMICAL:SetDescription("Sourced by your local pagans.")
-CHEMICAL:SetPrice(1000)
+CHEMICAL:SetPrice(aotraz_potions.Config.GToe)
 CHEMICAL:Define()

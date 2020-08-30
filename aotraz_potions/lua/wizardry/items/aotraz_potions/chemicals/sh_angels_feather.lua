@@ -1,5 +1,5 @@
 local CHEMICAL = Wizardry.Objects.NewChemical("aotraz.angels_feather")
 CHEMICAL:SetName("Angel's Feather")
 CHEMICAL:SetDescription("Produced locally by demons.")
-CHEMICAL:SetPrice(2000)
+CHEMICAL:SetPrice(aotraz_potions.Config.AFeather)
 CHEMICAL:Define()
