@@ -1,5 +1,5 @@
 # Alpha Branch
-This branch is where I do stuff before I push it to master. I would not recommend downloading this branch.
+This branch is where I do stuff before I push it to master. I would not recommend downloading this branch as there may be issues with the code.
 
 # Aotraz's Potions
 Made for Livaco's Wizardry addon: https://www.gmodstore.com/market/view/wizardry-potion-creation-system
