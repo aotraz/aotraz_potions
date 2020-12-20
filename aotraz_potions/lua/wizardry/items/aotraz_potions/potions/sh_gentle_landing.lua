@@ -3,7 +3,11 @@ POTION:SetName("Gentle Landing")
 POTION:SetDescription("Makes you have no fall damage for a small period of time.")
 POTION:SetEffectTime(15)
 POTION:SetColor(Color(10, 10, 10))
-POTION:SetStirAmount(8)
+if (aotraz_potions.Config.Debug == true) then
+  POTION:SetStirAmount(1)
+else
+  POTION:SetStirAmount(8)
+end
 
 POTION.effects = {
   "Makes you take no fall damage."

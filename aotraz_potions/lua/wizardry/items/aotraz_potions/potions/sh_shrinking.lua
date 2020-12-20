@@ -3,7 +3,11 @@ POTION:SetName("Shrinking")
 POTION:SetDescription("Makes you smaller!")
 POTION:SetEffectTime(30)
 POTION:SetColor(Color(100, 230, 10))
-POTION:SetStirAmount(10)
+if (aotraz_potions.Config.Debug == true) then
+  POTION:SetStirAmount(1)
+else
+  POTION:SetStirAmount(10)
+end
 
 POTION.effects = {
   "Makes you shrink half your size. **Affects your hitbox!**"

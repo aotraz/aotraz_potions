@@ -3,7 +3,11 @@ POTION:SetName("Gentle Jump Boost")
 POTION:SetDescription("Combines the effects of Jump Boost and Gentle Landing.")
 POTION:SetEffectTime(20)
 POTION:SetColor(Color(100, 100, 100))
-POTION:SetStirAmount(15)
+if (aotraz_potions.Config.Debug == true) then
+  POTION:SetStirAmount(1)
+else
+  POTION:SetStirAmount(15)
+end
 
 POTION.effects = {
   "Makes you jump " .. tostring(aotraz_potions.Config.JumpPower) .. "x higher and take no fall damage."

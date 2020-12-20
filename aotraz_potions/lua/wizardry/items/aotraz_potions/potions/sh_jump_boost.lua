@@ -3,7 +3,11 @@ POTION:SetName("Jump Boost")
 POTION:SetDescription("Makes you jump higher!")
 POTION:SetEffectTime(15)
 POTION:SetColor(Color(230, 230, 230))
-POTION:SetStirAmount(8)
+if (aotraz_potions.Config.Debug == true) then
+  POTION:SetStirAmount(1)
+else
+  POTION:SetStirAmount(8)
+end
 
 POTION.effects = {
   "Makes you jump " .. tostring(aotraz_potions.Config.JumpPower) .. "x higher."

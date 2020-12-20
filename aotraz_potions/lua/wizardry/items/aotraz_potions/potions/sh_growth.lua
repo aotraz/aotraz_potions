@@ -3,7 +3,11 @@ POTION:SetName("Growth")
 POTION:SetDescription("Makes you bigger!")
 POTION:SetEffectTime(30)
 POTION:SetColor(Color(10, 230, 10))
-POTION:SetStirAmount(10)
+if (aotraz_potions.Config.Debug == true) then
+  POTION:SetStirAmount(1)
+else
+  POTION:SetStirAmount(10)
+end
 
 POTION.effects = {
   "Makes you grow twice your size. **Affects your hitbox!**"
