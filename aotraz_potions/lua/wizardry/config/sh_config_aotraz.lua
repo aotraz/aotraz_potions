@@ -15,21 +15,26 @@ aotraz_potions.C.GLsecs = 15 -- This affects how long the effects of Gentle Land
 aotraz_potions.C.Gsecs = 30 -- This affects how long the effects of Growth last.
 aotraz_potions.C.JBsecs = 15 -- This affects how long the effects of Jump Boost last.
 aotraz_potions.C.Ssecs = 30 -- This affects how long the effects of Shrinking last.
+aotraz_potions.C.Msecs = 60 -- This affects how long the effects of Mute last.
+aotraz_potions.C.Bsecs = 60 -- This affects how long the effects of Blinding last.
 
--- Chem. Prices
-aotraz_potions.C.GToe = 1000 -- This affects the price of Giant's Toe
-aotraz_potions.C.Meth = 1000 -- This affects the price of Meth
-aotraz_potions.C.Afeather = 2000 -- This affects the price of Angel's feather
-aotraz_potions.C.Ants = 3000 -- This affects the price of Ants
-aotraz_potions.C.Cyanide = 4000 -- This affects the price of Cyanide
-
--- Chem. Stir Time (in seconds)
+-- Potion Stir Time (in seconds)
 aotraz_potions.C.Cst = 5 -- This affects the stirring time of Combustion
 aotraz_potions.C.GJBst = 15 -- This affects the stirring time of Gentle Jump Boost
 aotraz_potions.C.GLst = 8 -- This affects the stirring time of Gentle Landing
 aotraz_potions.C.Gst = 10 -- This affects the stirring time of Growth
 aotraz_potions.C.JBst = 8 -- This affects the stirring time of Jump Boost
 aotraz_potions.C.Sst = 10 -- This affects the stirring time of Shrinking
+aotraz_potions.C.Mst = 7 -- This affects the stirring time of Mute
+aotraz_potions.C.Bst = 5 -- This affects the stirring time of Blinding
+
+-- Chem. Prices
+aotraz_potions.C.GToe = 1250 -- This affects the price of Giant's Toe
+aotraz_potions.C.Meth = 1000 -- This affects the price of Meth
+aotraz_potions.C.Afeather = 3000 -- This affects the price of Angel's feather
+aotraz_potions.C.Ants = 1500 -- This affects the price of Ants
+aotraz_potions.C.Cyanide = 2000 -- This affects the price of Cyanide
+aotraz_potions.C.Worms = 150 -- This affects the price of Worms
 
 
 --[[
@@ -59,6 +64,7 @@ Aotraz's Potions
 | Cyanide             | aotraz.cyanide        |
 | Giant's Toe         | aotraz.giants_toe     |
 | Meth                | aotraz.meth           |
+| Worms               | aotraz.worms          |
 +---------------------+-----------------------+
 --]]
 
@@ -99,6 +105,16 @@ aotraz_potions.PR.GJB = {
   ["wizardry.organsoup"] = 1
 }
 
+-- Mute
+aotraz_potions.PR.M = {
+  ["aotraz.worms"] = 3
+}
+
+-- Blinding
+aotraz_potions.PR.B = {
+  ["aotraz.worms"] = 2,
+  ["wizardry.blood"] = 2
+}
 
 -- Debug
 aotraz_potions.C.Debug = true -- Activates debug mode, making this pack's ingredients/chemicals free and potions stir instantly
