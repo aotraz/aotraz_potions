@@ -117,4 +117,4 @@ aotraz_potions.PR.B = {
 }
 
 -- Debug
-aotraz_potions.C.Debug = true -- Activates debug mode, making this pack's ingredients/chemicals free and potions stir instantly
+aotraz_potions.C.Debug = false -- Activates debug mode, making this pack's ingredients/chemicals free and potions stir instantly
