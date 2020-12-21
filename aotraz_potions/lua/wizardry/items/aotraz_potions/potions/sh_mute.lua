@@ -25,5 +25,5 @@ end )
 end
 
 function POTION:DesistSV(ply)
-  hook.Remove("PlayerCanHearPlayersVoice", "aotrazpotions_mute_" + ply:SteamID64())
+  hook.Remove("PlayerCanHearPlayersVoice", "aotrazpotions_mute_" .. ply:SteamID64())
 end

@@ -25,5 +25,5 @@ end )
 end
 
 function POTION:DesistSV(ply)
-  hook.Remove("EntityTakeDamage", "aotrazpotions_falldamage_" + ply:SteamID64())
+  hook.Remove("EntityTakeDamage", "aotrazpotions_falldamage_" .. ply:SteamID64())
 end
